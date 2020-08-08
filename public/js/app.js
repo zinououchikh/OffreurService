@@ -1921,25 +1921,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'basic',
   data: function data() {
@@ -38162,34 +38143,14 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "row" }, [
       _c("h1", { staticClass: "text-center text-primary mb-3 col-12" }, [
-        _vm._v("A propos de moi")
+        _vm._v("A propos de cette plateforme")
       ]),
       _vm._v(" "),
       _c("hr"),
       _vm._v(" "),
       _c("div", { staticClass: "col-12 text-justify lead" }, [
         _vm._v(
-          "\n        Ouchikh Zineddine, 25 ans, diplômé en informatique spécialité \n        « Systèmes d’Information Répartis  » au sein de l’université M’hamed Bougera Boumerdes,\n        et acctuelement un ingénieur avant-vente dans le domaine informatique. "
-        ),
-        _c("br"),
-        _vm._v(
-          "\n        La formation que j’ai reçue durant mes années d’études dans cette université m’a permis de concevoir\n        et développer des applications informatiques et d'applications web\n        et la mise en œuvre des bases de données. "
-        ),
-        _c("br"),
-        _vm._v(
-          "\n        Mon projet de fin d’études de Master m’a permis de concevoir une solution pour le monitoring\n        de l’infrastructure informatique pour l’entreprise GLOBAL AXIS Alger,\n        ce dernier m’a permis d’avoir des connaissances les notions des réseaux et la sécurité\n        informatique. "
-        ),
-        _c("br"),
-        _vm._v(
-          " \n        L’expérience passé a Emploitic SPA et SARL Intérimeo\n        m’a permis de vivre de prés le processus de développement \n        software appliqué au sein de l’équipe technique qui est basé\n        sur une méthodologie agile « Scrum », et il m’a permis d’acquérir\n        divers compétences dans le domaine du développement web. "
-        ),
-        _c("br"),
-        _vm._v(
-          "\n        L'éxperience actuelle comme un ingénieur avant-vente informatique chez un intégrateur\n        de solutions informatique \"Media Technology\" m'a permis d'aquérir des connaissances\n        sur le materiel informatique et la résolution des problémes liées à ce dernier, l'utilisation\n        de support, qualification des solutions, et la rédaction des documents techniques. "
-        ),
-        _c("br"),
-        _vm._v(
-          " \n        Les ambitions professionnelles que je souhaiterais concrétiser \n        est d’exercer une carrière en tant qu‘un ingénieur en informatique,\n        au sein d’une entreprise nationale ou internationale.\n\n    "
+          "\n        OffreurService est une plateforme qui réunis a la fois les demandeur de service et les offreurs \n        de service, quelle que soit le service,bircolage ou proffessionelle, il y'a pas de catégorie de \n        service pour le moment, mais il y'aura prochainement, le demandeur peut voir tout les offres de service, \n        et l'offreur peux contacter l'administrateur pour ajouter sa offre.\n    "
         )
       ])
     ])
@@ -39029,20 +38990,7 @@ var render = function() {
                   _c(
                     "router-link",
                     { staticClass: "nav-link", attrs: { to: "/" } },
-                    [_vm._v("A propos de moi")]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                { staticClass: "nav-item" },
-                [
-                  _c(
-                    "router-link",
-                    { staticClass: "nav-link", attrs: { to: "/formation" } },
-                    [_vm._v("Formations")]
+                    [_vm._v("A propos de la plateforme")]
                   )
                 ],
                 1
@@ -39055,20 +39003,7 @@ var render = function() {
                   _c(
                     "router-link",
                     { staticClass: "nav-link", attrs: { to: "/experience" } },
-                    [_vm._v("Expériences")]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                { staticClass: "nav-item" },
-                [
-                  _c(
-                    "router-link",
-                    { staticClass: "nav-link", attrs: { to: "/competence" } },
-                    [_vm._v("Compétences")]
+                    [_vm._v("Les offres")]
                   )
                 ],
                 1

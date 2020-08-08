@@ -9,16 +9,10 @@
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <router-link to="/" class="nav-link">A propos de moi</router-link>   
+                <router-link to="/" class="nav-link">A propos de la plateforme</router-link>   
             </li>
             <li class="nav-item">
-                <router-link to="/formation" class="nav-link">Formations</router-link>   
-            </li>
-            <li class="nav-item">
-                <router-link to="/experience" class="nav-link">Expériences</router-link>   
-            </li>
-            <li class="nav-item">
-                <router-link to="/competence" class="nav-link">Compétences</router-link>
+                <router-link to="/experience" class="nav-link">Les offres</router-link>   
             </li>
             </ul>
         </div>
