@@ -1961,6 +1961,130 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ContactComponent.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ContactComponent.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['offreur']
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ExComponent.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ExComponent.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ContactComponent_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ContactComponent.vue */ "./resources/js/components/ContactComponent.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    Contact: _ContactComponent_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  created: function created() {
+    var _this = this;
+
+    axios.get('http://localhost:8000/api/offser?api_token=XrL9hHGNqP81og8mtixLQNX91WyVESEHXu138djEPxYUnhLLMnhfaMvtBhquMAUnEcNYKo4k1bJ1DKcTQBZ1puBWd1NrOVvNLbmG').then(function (res) {
+      return _this.offreurs = res.data;
+    });
+  },
+  mounted: function mounted() {},
+  data: function data() {
+    return {
+      offreurs: []
+    };
+  },
+  methods: {}
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/MainApp.vue?vue&type=script&lang=js&":
 /*!******************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/MainApp.vue?vue&type=script&lang=js& ***!
@@ -38328,6 +38452,229 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ContactComponent.vue?vue&type=template&id=2b26a8a8&":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ContactComponent.vue?vue&type=template&id=2b26a8a8& ***!
+  \*******************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c(
+      "button",
+      {
+        staticClass:
+          "my-2 col-12 col-sm-12 col-md-4 btn btn-outline-success mx-2",
+        attrs: {
+          type: "button",
+          "data-toggle": "modal",
+          "data-target": "#id" + this.$props.offreur.id
+        }
+      },
+      [_vm._v("\n        Contacter\n    ")]
+    ),
+    _vm._v(" "),
+    _c(
+      "button",
+      {
+        staticClass:
+          "my-2 col-12 col-sm-12 col-md-4 btn btn-outline-primary mx-2",
+        attrs: {
+          type: "button",
+          "data-toggle": "modal",
+          "data-target": "#id2" + this.$props.offreur.id
+        }
+      },
+      [_vm._v("\n        Détails\n    ")]
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass: "modal fade",
+        attrs: {
+          id: "id" + this.$props.offreur.id,
+          tabindex: "-1",
+          role: "dialog",
+          "aria-labelledby": "exampleModalLabel",
+          "aria-hidden": "true"
+        }
+      },
+      [
+        _c(
+          "div",
+          { staticClass: "modal-dialog", attrs: { role: "document" } },
+          [
+            _c("div", { staticClass: "modal-content" }, [
+              _c("div", { staticClass: "modal-header" }, [
+                _c(
+                  "h4",
+                  {
+                    staticClass: "modal-title",
+                    attrs: { id: "exampleModalLabel" }
+                  },
+                  [_vm._v(_vm._s(this.$props.offreur.name))]
+                ),
+                _vm._v(" "),
+                _vm._m(0)
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "modal-body" }, [
+                _c("h4", [
+                  _vm._v("Email : " + _vm._s(this.$props.offreur.email))
+                ]),
+                _vm._v(" "),
+                _c("h4", [
+                  _vm._v("Téléphone : " + _vm._s(this.$props.offreur.tel))
+                ])
+              ]),
+              _vm._v(" "),
+              _vm._m(1)
+            ])
+          ]
+        )
+      ]
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass: "modal fade",
+        attrs: {
+          id: "id2" + this.$props.offreur.id,
+          tabindex: "-1",
+          role: "dialog",
+          "aria-labelledby": "exampleModalLabel2",
+          "aria-hidden": "true"
+        }
+      },
+      [
+        _c(
+          "div",
+          { staticClass: "modal-dialog", attrs: { role: "document" } },
+          [
+            _c("div", { staticClass: "modal-content" }, [
+              _c("div", { staticClass: "modal-header" }, [
+                _c(
+                  "h4",
+                  {
+                    staticClass: "modal-title",
+                    attrs: { id: "exampleModalLabel2" }
+                  },
+                  [_vm._v(_vm._s(this.$props.offreur.name))]
+                ),
+                _vm._v(" "),
+                _vm._m(2)
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "modal-body" }, [
+                _c("h5", [_vm._v("Biography :")]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "\n                 " +
+                      _vm._s(this.$props.offreur.biographgy) +
+                      "\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("h4", [
+                  _vm._v("Email : " + _vm._s(this.$props.offreur.email))
+                ]),
+                _vm._v(" "),
+                _c("h4", [
+                  _vm._v("Téléphone : " + _vm._s(this.$props.offreur.tel))
+                ])
+              ]),
+              _vm._v(" "),
+              _vm._m(3)
+            ])
+          ]
+        )
+      ]
+    )
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "button",
+      {
+        staticClass: "close",
+        attrs: {
+          type: "button",
+          "data-dismiss": "modal",
+          "aria-label": "Close"
+        }
+      },
+      [_c("span", { attrs: { "aria-hidden": "true" } }, [_vm._v("×")])]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "modal-footer" }, [
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-outline-success",
+          attrs: { type: "button", "data-dismiss": "modal" }
+        },
+        [_vm._v("Close")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "button",
+      {
+        staticClass: "close",
+        attrs: {
+          type: "button",
+          "data-dismiss": "modal",
+          "aria-label": "Close"
+        }
+      },
+      [_c("span", { attrs: { "aria-hidden": "true" } }, [_vm._v("×")])]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "modal-footer" }, [
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-outline-primary",
+          attrs: { type: "button", "data-dismiss": "modal" }
+        },
+        [_vm._v("Close")]
+      )
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ExComponent.vue?vue&type=template&id=59102122&":
 /*!**************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ExComponent.vue?vue&type=template&id=59102122& ***!
@@ -38343,338 +38690,56 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c("h1", { staticClass: "text-center mb-2 col-12 text-primary" }, [
-        _vm._v("Expériences")
-      ]),
-      _vm._v(" "),
-      _c(
+  return _c(
+    "div",
+    { staticClass: "row w-100" },
+    _vm._l(_vm.offreurs, function(offreur) {
+      return _c(
         "div",
-        { staticStyle: { width: "100%" }, attrs: { id: "accordion" } },
+        { key: offreur.id, staticClass: "col-12 col-sm-6 col-md-4" },
         [
-          _c("div", { staticClass: "card" }, [
-            _c(
-              "div",
-              { staticClass: "card-header", attrs: { id: "headingOne" } },
-              [
-                _c("h5", { staticClass: "mb-0 row" }, [
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-link text-left col",
-                      attrs: {
-                        "data-toggle": "collapse",
-                        "data-target": "#collapseOne",
-                        "aria-expanded": "true",
-                        "aria-controls": "collapseOne"
-                      }
-                    },
-                    [_vm._v("\n            08/2019 - A ce jour \n            ")]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col text-right" }, [
-                    _vm._v(
-                      "\n                 SARL Media Technology\n            "
-                    )
-                  ])
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "collapse show",
-                attrs: {
-                  id: "collapseOne",
-                  "aria-labelledby": "headingOne",
-                  "data-parent": "#accordion"
-                }
-              },
-              [
-                _c("div", { staticClass: "card-body lead" }, [
-                  _c("div", [
-                    _c("b", [_vm._v("Le poste occupé :")]),
-                    _vm._v(" Ingénieur Avant-vente")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", [_c("b", [_vm._v("Missions et taches :")])]),
-                  _vm._v(" "),
-                  _c("ul", { staticClass: "ml-5" }, [
-                    _c("li", [
-                      _vm._v(
-                        "Gestion de projet en lien avec les exigences du client."
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _vm._v(
-                        "Définir les ressources humaines et matérielles nécessaires au projet."
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _vm._v("Recherche de solutions technique adaptées.")
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _vm._v(
-                        "Mise en place de tableaux de bords et indicateur de suivi des projets."
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _vm._v("Qualifier les solutions et les besoins client.")
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _vm._v(
-                        "Management des équipes et coordination des services de l’entreprise."
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _vm._v("Recherche de solutions technique adaptées.")
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [_vm._v("Elaborer la proposition technique.")]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _vm._v(
-                        "Assurer le déploiement technique et installation."
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _vm._v("Suivi de la réalisation du cahier de charge.")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", [
-                    _c("b", [_vm._v("Environnement  : ")]),
-                    _vm._v(
-                      " Active directory, VMware, Sophos, Kaspersky, Windows Server (2012, 2016), Windows, DELL"
-                    )
-                  ])
-                ])
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "card" }, [
-            _c(
-              "div",
-              { staticClass: "card-header", attrs: { id: "headingTwo" } },
-              [
-                _c("h5", { staticClass: "mb-0 row" }, [
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-link text-left col-6 collapsed",
-                      attrs: {
-                        "data-toggle": "collapse",
-                        "data-target": "#collapseTwo",
-                        "aria-expanded": "false",
-                        "aria-controls": "collapseTwo"
-                      }
-                    },
-                    [_vm._v("\n            04/2019 - 08/2019\n            ")]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col text-right" }, [
-                    _vm._v("\n                SARL Intérimeo\n            ")
-                  ])
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "collapse",
-                attrs: {
-                  id: "collapseTwo",
-                  "aria-labelledby": "headingTwo",
-                  "data-parent": "#accordion"
-                }
-              },
-              [
-                _c("div", { staticClass: "card-body lead" }, [
-                  _c("div", [
-                    _c("b", [_vm._v("Le poste occupé :")]),
-                    _vm._v(" Développeur web")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", [_c("b", [_vm._v("Missions et taches :")])]),
-                  _vm._v(" "),
-                  _c("ul", { staticClass: "ml-5" }, [
-                    _c("li", [
-                      _vm._v(
-                        "Assurer le développement des modules dans le CRM de l'entreprise."
-                      )
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", [
-                    _c("b", [_vm._v("Environnement  : ")]),
-                    _vm._v(
-                      " PHP, MySQL, HTML, JavaScript, jQuery, Ajax, CSS, Bootstrap, LINUX."
-                    )
-                  ])
-                ])
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "card" }, [
-            _c(
-              "div",
-              { staticClass: "card-header", attrs: { id: "headingThree" } },
-              [
-                _c("h5", { staticClass: "mb-0 row" }, [
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-link text-left col-6 collapsed",
-                      attrs: {
-                        "data-toggle": "collapse",
-                        "data-target": "#collapseThree",
-                        "aria-expanded": "false",
-                        "aria-controls": "collapseThree"
-                      }
-                    },
-                    [_vm._v("\n            09/2018 - 03/2019\n            ")]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col text-right" }, [
-                    _vm._v("\n                Emploitic SPA\n            ")
-                  ])
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "collapse",
-                attrs: {
-                  id: "collapseThree",
-                  "aria-labelledby": "headingThree",
-                  "data-parent": "#accordion"
-                }
-              },
-              [
-                _c("div", { staticClass: "card-body lead" }, [
-                  _c("div", [
-                    _c("b", [_vm._v("Le poste occupé :")]),
-                    _vm._v(" Développeur web")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", [_c("b", [_vm._v("Missions et taches :")])]),
-                  _vm._v(" "),
-                  _c("ul", { staticClass: "ml-5" }, [
-                    _c("li", [
-                      _vm._v(
-                        "Assurer le development de modules sur Emploitic.com."
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _vm._v("Développement d’une solution CV-builder.")
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [_vm._v("Assurer le role de scrum master.")])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", [
-                    _c("b", [_vm._v("Environnement  : ")]),
-                    _vm._v(
-                      " Docker, PHP, MySQL, HTML, JavaScript, jQuery, Ajax, CSS, Bootstrap, VueJs, Joomla, PHP Storm, Trello, LINUX."
-                    )
-                  ])
-                ])
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "card" }, [
-            _c(
-              "div",
-              { staticClass: "card-header", attrs: { id: "headingFour" } },
-              [
-                _c("h5", { staticClass: "mb-0 row" }, [
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-link text-left col-6 collapsed",
-                      attrs: {
-                        "data-toggle": "collapse",
-                        "data-target": "#collapseFour",
-                        "aria-expanded": "false",
-                        "aria-controls": "collapseFour"
-                      }
-                    },
-                    [_vm._v("\n            01/2018 - 06/2018\n            ")]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col text-right" }, [
-                    _vm._v(
-                      "\n                Global Axis Algérie\n            "
-                    )
-                  ])
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "collapse",
-                attrs: {
-                  id: "collapseFour",
-                  "aria-labelledby": "headingFour",
-                  "data-parent": "#accordion"
-                }
-              },
-              [
-                _c("div", { staticClass: "card-body lead" }, [
-                  _c("div", [
-                    _c("b", [_vm._v("Le poste occupé :")]),
-                    _vm._v(" Stagiaire")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", [_c("b", [_vm._v("Missions et taches :")])]),
-                  _vm._v(" "),
-                  _c("ul", { staticClass: "ml-5" }, [
-                    _c("li", [
-                      _vm._v(
-                        "Conception et réalisation d’une solution de monitoring pour l’infrastructure informatique."
-                      )
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", [
-                    _c("b", [_vm._v("Environnement  : ")]),
-                    _vm._v(
-                      " MySQL, HTML, JavaScript, jQuery, Ajax, CSS, PHP, MS Project, Net-SNMP, Bootstrap, WampServer, Windows, LINUX"
-                    )
-                  ])
-                ])
-              ]
-            )
-          ])
+          _c(
+            "div",
+            {
+              staticClass: "card border-primary mb-3 mx-3",
+              staticStyle: { "max-width": "20rem", "border-radius": "50px 0px" }
+            },
+            [
+              _c(
+                "div",
+                {
+                  staticClass: "card-header text-center",
+                  staticStyle: { "border-radius": "50PX 0px 0px 0px" }
+                },
+                [_vm._v(_vm._s(offreur.name))]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-body" }, [
+                _c("p", { staticClass: "card-text" }, [
+                  _vm._v(_vm._s(offreur.biographgy.substr(0, 40)) + "...")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "text-center" },
+                  [
+                    _c("Contact", {
+                      key: offreur.id,
+                      attrs: { offreur: offreur }
+                    })
+                  ],
+                  1
+                )
+              ])
+            ]
+          )
         ]
       )
-    ])
-  }
-]
+    }),
+    0
+  )
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -38890,7 +38955,7 @@ var render = function() {
       { staticClass: "navbar navbar-expand-lg navbar-dark bg-primary" },
       [
         _c("a", { staticClass: "navbar-brand", attrs: { href: "/" } }, [
-          _vm._v("Ouchikh Zineddine")
+          _vm._v("Offreurs Services")
         ]),
         _vm._v(" "),
         _vm._m(0),
@@ -95458,11 +95523,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
 /* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./routes */ "./resources/js/routes.js");
 /* harmony import */ var _components_MainApp_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/MainApp.vue */ "./resources/js/components/MainApp.vue");
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
@@ -95475,23 +95535,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   mode: 'history'
 });
 Vue.use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
-/**
- * The following block of code may be used to automatically register your
- * Vue components. It will recursively scan this directory for the Vue
- * components and automatically register them with their "basename".
- *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
- */
-// const files = require.context('./', true, /\.vue$/i)
-// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
-
 Vue.component('main-app', __webpack_require__(/*! ./components/MainApp.vue */ "./resources/js/components/MainApp.vue")["default"]);
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
-
 var app = new Vue({
   vuetify: _plugins_vuetify__WEBPACK_IMPORTED_MODULE_0__["default"],
   el: '#app',
@@ -95670,6 +95714,75 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/ContactComponent.vue":
+/*!******************************************************!*\
+  !*** ./resources/js/components/ContactComponent.vue ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ContactComponent_vue_vue_type_template_id_2b26a8a8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ContactComponent.vue?vue&type=template&id=2b26a8a8& */ "./resources/js/components/ContactComponent.vue?vue&type=template&id=2b26a8a8&");
+/* harmony import */ var _ContactComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ContactComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/ContactComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ContactComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ContactComponent_vue_vue_type_template_id_2b26a8a8___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ContactComponent_vue_vue_type_template_id_2b26a8a8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/ContactComponent.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/ContactComponent.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/components/ContactComponent.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ContactComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./ContactComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ContactComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ContactComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/ContactComponent.vue?vue&type=template&id=2b26a8a8&":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/components/ContactComponent.vue?vue&type=template&id=2b26a8a8& ***!
+  \*************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ContactComponent_vue_vue_type_template_id_2b26a8a8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./ContactComponent.vue?vue&type=template&id=2b26a8a8& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ContactComponent.vue?vue&type=template&id=2b26a8a8&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ContactComponent_vue_vue_type_template_id_2b26a8a8___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ContactComponent_vue_vue_type_template_id_2b26a8a8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/ExComponent.vue":
 /*!*************************************************!*\
   !*** ./resources/js/components/ExComponent.vue ***!
@@ -95680,15 +95793,17 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ExComponent_vue_vue_type_template_id_59102122___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ExComponent.vue?vue&type=template&id=59102122& */ "./resources/js/components/ExComponent.vue?vue&type=template&id=59102122&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _ExComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ExComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/ExComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
-var script = {}
+
+
 
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
-  script,
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ExComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _ExComponent_vue_vue_type_template_id_59102122___WEBPACK_IMPORTED_MODULE_0__["render"],
   _ExComponent_vue_vue_type_template_id_59102122___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
@@ -95702,6 +95817,20 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 if (false) { var api; }
 component.options.__file = "resources/js/components/ExComponent.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/ExComponent.vue?vue&type=script&lang=js&":
+/*!**************************************************************************!*\
+  !*** ./resources/js/components/ExComponent.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ExComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./ExComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ExComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ExComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
@@ -95974,8 +96103,8 @@ var opts = {};
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\HP\Desktop\projects\php-projects\cv_maker\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\HP\Desktop\projects\php-projects\cv_maker\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\HP\Desktop\projects\php-projects\job_project\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\HP\Desktop\projects\php-projects\job_project\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

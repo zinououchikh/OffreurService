@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BasicsController;
+use App\Http\Controllers\OffreurServiceController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -19,5 +20,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('basics', 'BasicsController@index');
-Route::get('basics/{id}', 'BasicsController@show');
+Route::middleware('auth:api')->group(function(){
+    Route::apiResource('offser', 'OffreurServiceController');
+});
+
