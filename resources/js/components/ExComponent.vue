@@ -19,7 +19,7 @@ import Contact from './ContactComponent.vue';
 export default {
     components: {Contact},
     created(){
-        axios.get('http://localhost:8000/api/offser?api_token=XrL9hHGNqP81og8mtixLQNX91WyVESEHXu138djEPxYUnhLLMnhfaMvtBhquMAUnEcNYKo4k1bJ1DKcTQBZ1puBWd1NrOVvNLbmG')
+        axios.get('http://job_project.test/api/offser?api_token=fJFmphzE8P67WIOHF1uadySjic8eTgoMTYlxbBqEN5bamKW0ukZsjeSdK2wRGLDivorRQ39KjpyTjxnx1J1sVC97sBMrgvct1xrY')
         .then((res)=>this.offreurs = res.data)
         
     },

@@ -11,27 +11,3 @@
     </div>
 </template>
 
-<script>
-export default {
-    name: 'basic',
-    
-    data() {
-        return {
-            basics: []
-        }
-    },
-    mounted() {
-        
-            axios.get('http://localhost:8000/api/basics')
-            .then((response) => {
-                this.basics = response.data.basics
-            })
-        
-    },
-    methods: {
-        delete(id){
-
-        }
-    }
-}
-</script>
